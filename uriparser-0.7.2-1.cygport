@@ -1,0 +1,14 @@
+DESCRIPTION="RFC 3986 compliant URI parser library"
+HOMEPAGE="http://uriparser.sourceforge.net/"
+SRC_URI="mirror://sourceforge/uriparser/${P}.tar.lzma"
+PATCH_URI="0.7.2-no-undefined.patch
+           0.7.2-wprintf.patch"
+
+abi=1
+PKG_NAMES="${PN} lib${PN}${abi} lib${PN}-devel"
+PKG_HINTS="src lib devel"
+PKG_CONTENTS[0]=	# empty
+PKG_CONTENTS[1]="usr/bin/*-${abi}.dll usr/share/doc/"
+PKG_CONTENTS[2]="usr/include/ usr/lib/"
+
+DISTCLEANFILES="acinclude.m4"
