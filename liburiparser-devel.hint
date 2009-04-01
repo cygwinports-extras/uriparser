@@ -1,0 +1,7 @@
+category: Libs
+requires: cygwin liburiparser-devel
+external-source: uriparser
+sdesc: "RFC3968 compliant URI parser library (development)"
+ldesc: "uriparser is a strictly RFC 3986 compliant URI parsing and 
+handling library written in C. uriparser is cross-platform, fast, 
+supports Unicode and is licensed under the New BSD license."

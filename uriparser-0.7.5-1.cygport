@@ -1,0 +1,12 @@
+DESCRIPTION="RFC 3986 compliant URI parser library"
+HOMEPAGE="http://uriparser.sourceforge.net/"
+SRC_URI="mirror://sourceforge/uriparser/${P}.tar.lzma"
+PATCH_URI="0.7.5-no-undefined.patch"
+
+PKG_NAMES="${PN} lib${PN}1 lib${PN}-devel"
+liburiparser1_CONTENTS="usr/bin/*-1.dll usr/share/doc/"
+liburiparser_devel_CONTENTS="usr/include/ usr/lib/"
+
+DISTCLEANFILES="acinclude.m4"
+
+CYGCONF_ARGS="--disable-doc"
