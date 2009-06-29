@@ -1,5 +1,5 @@
 category: Libs
-requires: cygwin libgcc1
+requires: libgcc1
 external-source: uriparser
 sdesc: "RFC3968 compliant URI parser library (runtime)"
 ldesc: "uriparser is a strictly RFC 3986 compliant URI parsing and 
